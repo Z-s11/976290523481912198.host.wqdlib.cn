@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>张婉晴个人页面</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="welcome-section">
+      <div class="welcome-title">欢迎来到张婉晴的个人页面</div>
+      <div class="scroll-tip" id="scrollTip">↓ 下滑查看更多内容 ↓</div>
+    </div>
+    <div class="container">
+      <div class="main-content">
+        <div class="profile-row">
+          <div class="profile-photo">
+            <img class="photo-img" src="./imgs/2.jpg" alt="个人照片" />
+          </div>
+          <div class="profile-info">
+            <div class="profile-title">个人介绍</div>
+            <ul class="profile-list">
+              <li><span class="field">姓名：</span>杨莹琪</li>
+              <li><span class="field">性别：</span>女</li>
+              <li><span class="field">年龄：</span>20</li>
+              <li><span class="field">出生年月：</span>2005.11.06</li>
+              <li><span class="field">籍贯：</span>陕西</li>
+              <li><span class="field">专业：</span>视觉传达</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="major-info">
+        <div class="profile-title">专业介绍：视觉传达设计</div>
+        <div class="profile-desc">
+          视觉传达设计（Visual Communication
+          Design）是以视觉语言为主要表现手段，结合图形、色彩、文字、排版等元素，通过平面、数字媒体、广告、包装、品牌等多种形式，将信息、思想和情感有效传递给受众的设计学科。<br /><br />
+          视觉传达设计不仅注重美学与创意，更强调信息的清晰表达和传播效果。学习内容涵盖平面设计、UI界面设计、品牌形象、插画、广告设计、包装设计等多个方向。毕业生可在广告公司、设计公司、互联网企业、出版传媒等领域从事相关工作。
+        </div>
+        <div class="works-demo-title">作品示例</div>
+        <div class="works-demo">
+          <img src="./imgs/1.jpg" alt="作品1" class="works-demo-img" />
+          <img src="./imgs/6.jpg" alt="作品2" class="works-demo-img" />
+          <img src="./imgs/3.jpg" alt="作品3" class="works-demo-img" />
+          <img src="./imgs/4.jpg" alt="作品4" class="works-demo-img" />
+          <img src="./imgs/5.jpg" alt="作品5" class="works-demo-img" />
+          <img src="./imgs/7.jpg" alt="作品7" class="works-demo-img" />
+        </div>
+      </div>
+      <footer class="footer-section">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-title">联系我们</div>
+            <div>地址：咸阳师范学院</div>
+            <div>电话：010-0000-0000</div>
+            <div>邮箱：123456@qq.com</div>
+            <div>时间：09:00-18:00</div>
+          </div>
+          <div class="footer-follow">
+            <div class="footer-title">关注我们</div>
+            <div class="footer-qrcode"></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          ©2024 个人博客 版权所有 京ICP备00000000号
+        </div>
+      </footer>
+    </div>
+    <script>
+      // 滚动隐藏“下滑查看更多内容”
+      window.addEventListener("scroll", function () {
+        const tip = document.getElementById("scrollTip");
+        if (window.scrollY > 140) {
+          tip.style.opacity = "0";
+          tip.style.pointerEvents = "none";
+        } else {
+          tip.style.opacity = "1";
+          tip.style.pointerEvents = "auto";
+        }
+      });
+    </script>
+  </body>
+</html>
